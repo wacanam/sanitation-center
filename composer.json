@@ -1,0 +1,12 @@
+{
+    "name": "compact/covid",
+    "require": {
+        "php": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "wacanam",
+            "email": "wacanam@gmail.com"
+        }
+    ]
+}
