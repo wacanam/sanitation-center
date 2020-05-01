@@ -41,7 +41,7 @@
     <div class="w3-top">
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
             <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-            <?php if (isset($_GET['page']) && ($_GET['page'] == "home")) : ?>
+            <?php if (!isset($_GET['page']) || ($_GET['page'] == "home")) : ?>
                 <div class="w3-center w3-padding-16 "><i class="fa fa-home"></i>&nbsp; Home</div>
                 <h1 class="w3-center">Mobile Handwash and Footbath | Monitoring</h1>
                 <p class="w3-center w3-padding-0">A project initiative of USTP to fight againts COVID-19</p>
