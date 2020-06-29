@@ -8,7 +8,7 @@
         updateBooth($json, $db_conn);
     }
     function updateBooth($data, $conn){
-        $sql = "UPDATE booth SET battery1_lvl = $data->battery1, battery2_lvl = $data->battery2, soap_lvl = $data->soap, water_lvl = $data->water WHERE id = $data->booth_id;";
+        $sql = "UPDATE booth SET battery1_lvl = $data->battery1, soap_lvl = $data->soap, water_lvl = $data->water WHERE id = $data->booth_id;";
         if ($conn->query($sql) === TRUE) {
             echo "Record updated successfully";
         } else {
