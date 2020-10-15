@@ -90,7 +90,7 @@
                 <hr>
                 <div style="padding: 0px; margin: 0px; line-height: 10px">
                     <h5 id="booth001">Name: <?=$row['display_name']?></h5>
-                    <p>Location Coor.: <?=$row['location_coor']?></p>
+                    <p>Geo Location: <?=$row['location_coor']?></p>
                     <p>Address: <?=$row['address']?></p>
                     <?php
                     ($row['status']) ? print('<p>Status: <span class="fa fa-check-circle w3-text-green">&nbsp;Active</span></p>') :  print('<p>Status: <span class="fa fa-ban w3-text-red">&nbsp;Disable</span></p>');
