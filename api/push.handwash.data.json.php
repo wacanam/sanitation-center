@@ -10,7 +10,7 @@
         soap => 53,
         water => 84
     );
-    $json = json_encode($post);
+    $json = json_decode($post);
     var_dump($json);
     if($json){
         updateBooth($post, $db_conn);
