@@ -4,11 +4,11 @@
     // $post = file_get_contents('php://input');
     
     $post = array(
-        "booth_id" => 0,
-        "battery1" => 78,
-        "battery2" => 0,
-        "soap" => 53,
-        "water" => 84
+        booth_id => 0,
+        battery1 => 78,
+        battery2 => 0,
+        soap => 53,
+        water => 84
     );
     $json = json_encode($post);
     var_dump($json);
