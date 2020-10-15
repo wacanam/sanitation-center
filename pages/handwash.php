@@ -117,7 +117,6 @@
                                     <hr>
                                     <select class="w3-select" name="charging_batt">
                                         <option value="" disabled selected>🔋 Battery Charging | Loaded</option>
-                                        <option value="1">Battery 1</option>
                                         <option value="2">Battery 2</option>
                                     </select>
                                     <button type="submit" class="w3-teal w3-padding w3-margin">Save</button>
@@ -126,16 +125,11 @@
                         </div>
                     </div>
 
-                    <h5>Battery 1 Level</h5>
+                    <h5>Battery Level</h5>
                     <div class="w3-grey">
                         <div class="w3-container w3-center w3-padding w3-green" style="width:<?=$row['battery1_lvl']?>%"><?=$row['battery1_lvl']?>%&nbsp;|&nbsp;<?php ($row['on_charge_batt'])? print("Active") : print("Charging")?></div>
                     </div>
-
-                    <h5>Battery 2 Level</h5>
-                    <div class="w3-grey">
-                        <div class="w3-container w3-center w3-padding w3-orange" style="width:<?=$row['battery2_lvl']?>%"><?=$row['battery1_lvl']?>%&nbsp;|&nbsp;<?php (!$row['on_charge_batt'])? print("Active") : print("Charging")?></div>
-                    </div>
-
+                    
                     <h5>Soap Level Level</h5>
                     <div class="w3-grey">
                         <div class="w3-container w3-center w3-padding w3-red" style="width:<?=$row['soap_lvl']?>%"><?=$row['soap_lvl']?>%</div>
