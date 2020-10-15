@@ -8,11 +8,11 @@
         //updateBooth($json, $db_conn);
     //}
     $data = array(
-        "booth_id" => 0,
-        "battery1" => 78,
-        "battery2" => 0,
-        "soap" => 53,
-        "water" => 84
+        "booth_id" => "0",
+        "battery1" => "78",
+        "battery2" => "0",
+        "soap" => "53",
+        "water" => "84"
     );
     updateBooth($data, $db_conn);
     echo json_encode($data);
