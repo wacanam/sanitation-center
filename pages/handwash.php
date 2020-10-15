@@ -130,12 +130,12 @@
                         <div class="w3-container w3-center w3-padding w3-green" style="width:<?=$row['battery1_lvl']?>%"><?=$row['battery1_lvl']?>%&nbsp;|&nbsp;<?php ($row['on_charge_batt'])? print("Active") : print("Charging")?></div>
                     </div>
                     
-                    <h5>Soap Level Level</h5>
+                    <h5>Soap Level</h5>
                     <div class="w3-grey">
                         <div class="w3-container w3-center w3-padding w3-red" style="width:<?=$row['soap_lvl']?>%"><?=$row['soap_lvl']?>%</div>
                     </div>
 
-                    <h5>Water Level Level</h5>
+                    <h5>Water Level</h5>
                     <div class="w3-grey">
                         <div class="w3-container w3-center w3-padding w3-teal" style="width:<?=$row['water_lvl']?>%"><?=$row['water_lvl']?>%</div>
                     </div>
