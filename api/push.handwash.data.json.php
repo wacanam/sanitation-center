@@ -14,7 +14,7 @@
         "soap" => 53,
         "water" => 84
     );
-    updateBooth(json_encode($data), $conn);
+    updateBooth($data, $conn);
     echo json_encode($data);
     function updateBooth($data, $conn){
         $sql = "UPDATE booth SET battery1_lvl = $data->battery1, soap_lvl = $data->soap, water_lvl = $data->water WHERE id = $data->booth_id;";
