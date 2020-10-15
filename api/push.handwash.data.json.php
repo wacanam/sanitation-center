@@ -13,7 +13,7 @@
     $json = json_encode($post);
     var_dump($json);
     if($json){
-        updateBooth($json, $db_conn);
+        updateBooth($post, $db_conn);
     }
     function updateBooth($data, $conn){
         $sql = "UPDATE booth SET battery1_lvl = $data->battery1, soap_lvl = $data->soap, water_lvl = $data->water WHERE id = $data->booth_id;";
